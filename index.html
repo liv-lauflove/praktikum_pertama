@@ -18,8 +18,9 @@
     <p>Saya menyelesaikan pendidikan SMA pada tahun 2023. Setelah lulus, saya mengambil gap year sebelum melanjutkan ke perguruan tinggi pada tahun 2024. Awalnya saya sempat mempertimbangkan untuk mengambil jurusan Teknik Sipil atau Teknologi Informasi.
      namun setelah melalui berbagai pertimbangan akhirnya saya memutuskan untuk menempuh studi di bidang Teknologi Informasi karena merasa lebih sesuai dengan minat dan tujuan saya ke depan. Lalu... jika ingin tau kisah selengkapnya <a href="halaman2.html" target="_blank">klik link disini</a>. Selamat membaca</p>
     <hr>
+    <br>
     <h2>Kontak saya</h2>
-    <p>Anda dapat menghubungi saya melalui: <br>
+    <p>Untuk informasi lebih lanjut, Anda dapat menghubungi saya melalui: <br>
         <ul type="square">
             <li>whatsapp   : <a href="https://wa.me/6282339393859">082339393859</a></li>
             <li>instagram  : <a href="https://www.instagram.com/olyviaaudyy/">olyviaaudy</a></li>
@@ -28,6 +29,7 @@
     <h2>Proyek terakhir</h2>
     <p>Berikut proyek terakhir yang telah saya kerjakan:</p>
     <img src="jesusloveme.jpeg" alt="jesus love me wallpaper" width="500">
+    <br>
     <hr>
     <h2>Hobi</h2>
     <ul>
@@ -85,9 +87,27 @@
             <td>4 sks</td>
         </tr>
     </table>
-    
-
-    
+    <hr>
+    <h2>Formulir kontak</h2>
+    <p>Harap isi formulir dengan jelas</p>
+    <form action="submit_form.php" method="post">
+        <label for="nama"><strong>Nama lengkap:</strong></label>
+        <br>
+        <input type="text" id="nama" name="nama" required>
+        <br><br>
+        <label for="email"><strong>Email:</strong></label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="notelp"><strong>Nomor telepon:</strong></label><br>
+        <input type="tel" id="notelp" name="notelp" pattern="[0-9]{10,15}" required> <!-- note:pattern utk batasi format input angka, hanya boleh angka 0-9, 10,15 utk panjang imput harus min 10 dan maks 15 digit-->
+        <br><br>
+        <label for="pesan"><strong>Pesan:</strong></label>
+        <br>
+        <textarea id="pesan" name="pesan" rows="5" cols="50" required></textarea>
+        <br><br>
+        <button type="submit">Kirim</button>
+    </form>
 </head>
 </body>
 </html>
